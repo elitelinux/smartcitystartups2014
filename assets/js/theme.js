@@ -165,33 +165,34 @@ var theme = function () {
     // Smooth scrolling
     // ---------------------------------------------------------------------------------------
     function handleSmoothScroll(){
-        $(".sf-menu a, .scroll-to").click(function () {
+        $(window).load(function(){
+            $(".sf-menu a, .scroll-to").click(function () {
 
-            var headerH = $('header').outerHeight();
-            $(".sf-menu a").removeClass('active');
-            $(this).addClass('active');
-            $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top - 44 + "px"
-            }, {
-                duration: 1200,
-                easing: "easeInOutExpo"
+                var headerH = $('header').outerHeight();
+                $(".sf-menu a").removeClass('active');
+                $(this).addClass('active');
+                $("html, body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top - 44 + "px"
+                }, {
+                    duration: 1200,
+                    easing: "easeInOutExpo"
+                });
+                return false;
             });
-            return false;
+            $(".scroll-three").click(function () {
+                console.log('hello scroll');
+                var headerH = $('header').outerHeight();
+                $(".sf-menu a").removeClass('active');
+                //$(this).addClass('active');
+                $("html, body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top - 44 + "px"
+                }, {
+                    duration: 1200,
+                    easing: "easeInOutExpo"
+                });
+                return false;
+            });  
         });
-        $(".scroll-three").click(function () {
-
-            var headerH = $('header').outerHeight();
-            $(".sf-menu a").removeClass('active');
-            //$(this).addClass('active');
-            $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top - 44 + "px"
-            }, {
-                duration: 1200,
-                easing: "easeInOutExpo"
-            });
-            return false;
-        });        
-
     }
 
     // ---------------------------------------------------------------------------------------
