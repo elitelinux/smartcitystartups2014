@@ -167,7 +167,6 @@ var theme = function () {
     function handleSmoothScroll(){
         $(window).load(function(){
             $(".sf-menu a, .scroll-to").click(function () {
-
                 var headerH = $('header').outerHeight();
                 $(".sf-menu a").removeClass('active');
                 $(this).addClass('active');
@@ -180,7 +179,6 @@ var theme = function () {
                 return false;
             });
             $(".scroll-three").click(function () {
-                console.log('hello scroll');
                 var headerH = $('header').outerHeight();
                 $(".sf-menu a").removeClass('active');
                 //$(this).addClass('active');
