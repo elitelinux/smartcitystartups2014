@@ -398,6 +398,18 @@ var theme = function () {
                 pagination: false
             });
         },
+        // mediaPartners Slider
+        initmediaPartnerSlider: function () {
+            $("#mediapartners").owlCarousel({
+                items: 4,
+                itemsDesktop: false,
+                itemsDesktopSmall: [991, 4],
+                itemsTablet: [768, 3],
+                itemsMobile: [479, 2],
+                autoPlay: true,
+                pagination: false
+            });
+        },        
         // Twitter / Last Tweet Carousel
         initLastTweet: function () {
             $("#last-tweets").owlCarousel({singleItem: true, autoPlay: true, pagination: false });
