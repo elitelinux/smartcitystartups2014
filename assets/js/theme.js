@@ -437,7 +437,8 @@ var theme = function () {
                             setTimeout(function () {
                                 elem.addClass(animation + " visible");
                                 //list.ly
-                                $('.item_footer').remove()
+                                $('.item_footer').remove();
+                                $('.ly-item-number').remove();
                                 //end
 
                             }, animationDelay);
