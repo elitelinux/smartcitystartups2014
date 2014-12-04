@@ -259,7 +259,13 @@ var theme = function () {
     // ---------------------------------------------------------------------------------------
     // adopt testimonials owl carousel to design
     function testimonialsFix() {
+        if($('.item_footer').length){
 
+                //list.ly
+            $('.item_footer').remove();
+            $('.ly-item-number').remove();
+                //end
+        }
         var count = $('#testimonials').find('.owl-pagination .owl-page').length;
         count = (count / 2) - 1;
         $('#testimonials').find('.owl-pagination .owl-page').eq(Math.ceil(count)).addClass('nth');
@@ -436,11 +442,6 @@ var theme = function () {
                         if (animationDelay) {
                             setTimeout(function () {
                                 elem.addClass(animation + " visible");
-                                //list.ly
-                                $('.item_footer').remove();
-                                $('.ly-item-number').remove();
-                                //end
-
                             }, animationDelay);
                         } else {
                             elem.addClass(animation + " visible");
