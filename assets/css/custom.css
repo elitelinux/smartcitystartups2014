@@ -263,3 +263,8 @@ body { padding-top: 100px; }
 
 /*-----  End of Location  ------*/
 
+
+
+.item_footer { 
+	display: none !important;
+}
