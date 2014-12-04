@@ -259,9 +259,6 @@ var theme = function () {
     // ---------------------------------------------------------------------------------------
     // adopt testimonials owl carousel to design
     function testimonialsFix() {
-        //list.ly
-        $('.item_footer').remove()
-        //end
 
         var count = $('#testimonials').find('.owl-pagination .owl-page').length;
         count = (count / 2) - 1;
