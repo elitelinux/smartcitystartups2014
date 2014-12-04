@@ -436,6 +436,10 @@ var theme = function () {
                         if (animationDelay) {
                             setTimeout(function () {
                                 elem.addClass(animation + " visible");
+                                //list.ly
+                                $('.item_footer').remove()
+                                //end
+
                             }, animationDelay);
                         } else {
                             elem.addClass(animation + " visible");
