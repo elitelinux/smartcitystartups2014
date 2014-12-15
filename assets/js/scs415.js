@@ -1,7 +1,6 @@
 var app = angular.module('scs415', []);
 
-app.controller('MainCtrl', function($scope, $http, $compile, $log) {
-
+app.controller('MainCtrl', function($scope, $http, $compile, $log, $location, $anchorScroll) {
     $scope.attRows2 = [
         ['rosebroome', 'dougchertok', 'andrewfrey'],
         ['storybellows', 'matthaggman', 'anthonytownsend']
@@ -833,3 +832,18 @@ app.directive('timeline', function($timeout) {
         }
     }
 });
+
+
+
+var jumpPage = function(jump){
+  var currHash = jump || window.location.hash;
+  if(currHash){
+      var newHash = currHash;
+      if(currHash.indexOf('/') > -1) {
+        newHash = currHash.split('/')[1];
+      }
+      location.hash = "#" + newHash;
+  }
+  console.log(currHash);
+  console.log(newHash);        
+}
