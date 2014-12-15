@@ -844,6 +844,23 @@ var jumpPage = function(jump){
       }
       location.hash = "#" + newHash;
   }
-  console.log(currHash);
-  console.log(newHash);        
+  //console.log(currHash);
+  //console.log(newHash);        
 }
+
+
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            //console.log(target.selector);
+          
+            if (target.selector.indexOf('#') > -1) {
+                var tar = target.selector.split('#')[1];
+                ga('send', 'pageview', {'page': target.selector,'title': 'Smart City Startups - '+tar});
+                window.history.pushState({},'Smart City Startups - '+tar, target.selector);
+            };
+        }
+      });
+      });
