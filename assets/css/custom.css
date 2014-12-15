@@ -165,10 +165,10 @@ body { padding-top: 100px; }
 
 .section-title small { text-transform: none; }
 
-#speakers-title { margin-bottom: 30px;}
+#person-title { margin-bottom: 30px;}
 
-#speakers .thumbnail { height: 300px; }
-#speakers .thumbnail img { 
+#people .thumbnail { height: 300px; }
+#people .thumbnail img { 
 	height: auto;
 	width: auto;
 	max-width: 160px;
@@ -186,9 +186,9 @@ body { padding-top: 100px; }
 @media (max-width: 991px) {
 	.section-title { margin-bottom: 30px; }
 	#about-participants { margin-bottom: 15% }
-	.speaker { display: inline-block; }
-	#speakers .thumbnail { height: 175px; }
-	#speakers .thumbnail img {
+	.person { display: inline-block; }
+	#people .thumbnail { height: 175px; }
+	#people .thumbnail img {
 		width: 75%;
 		top: 0%;
 	}
@@ -226,7 +226,7 @@ body { padding-top: 100px; }
 }
 
 @media (max-width: 991px) {
-	#sponsors .slide-btn { max-width: 100%; }
+	#partners_sponsors .slide-btn { max-width: 100%; }
 	#organizers .owl-item img { max-width:100%; }
 }
 /*-----  End of Sponsors  ------*/
