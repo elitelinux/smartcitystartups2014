@@ -50,77 +50,6 @@
 <!-- Wrap all content -->
 <div class="wrapper" ng-init="jumpPage()">
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <!-- form -->
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Register for SCS415</h4>
-            </div>
-            <div class="modal-body">
-
-                <ul class="list-ul text-md">
-                            <li><i class="fa fa-stop"></i> <h4>Smart City Startups Workshop Participant + Showcase Visitor</h4> Thursday + Friday April 23rd - 24th, 2015 - $1,500 (free with invitation code) </li>
-                            <li><i class="fa fa-stop"></i> <h4>Smart City Startups Showcase Visitor</h4> Thursday Evening April 23rd, 2015 - FREE <br><a href="http://eventbrite.com" target="_blank" class="btn btn-theme-sm btn-theme btn-theme-primary" >Register</a></li>
-                            <li><i class="fa fa-stop"></i> <h4>Apply for an invitation code</h4> Startups are encouraged to apply for an invition code to waive the cost of the workshops in addition to potential travel reimbursment.<br><a href="https://docs.google.com/a/urban.us/forms/d/1_HJw28x7QBV13PRQLqMNbVEiWyz4yX07Qwt0afyBLbE/viewform" target="_blank" class="btn btn-theme-sm btn-theme btn-theme-primary">Go</a></li>
-                </ul>
-
-                <form name="regitration" method="post" action="#regitration" class="af-form" id="af-form-rf" style="display:none;">
-
-                    <div class="af-outer af-required">
-                        <div class="form-group af-inner">
-                            <input type="text" name="name" id="name-rf" size="30" value="" placeholder="Name *" class="form-control placeholder" />
-                            <label class="error" for="name-rf" id="name_error_rf">Name is required.</label>
-                        </div>
-                    </div>
-
-                    <div class="af-outer af-required">
-                        <div class="form-group af-inner">
-                            <input type="text" name="org_name" id="name-rf" size="30" value="" placeholder="Organization / Startup Name *" class="form-control placeholder" />
-                            <label class="error" for="org_name-rf" id="org_name_error_rf">Org Name is required.</label>
-                        </div>
-                    </div>                    
-
-                    <div class="af-outer af-required">
-                        <div class="form-group af-inner">
-                            <input type="text" name="email" id="email-rf" size="30" value="" placeholder="Email *" class="form-control placeholder" />
-                            <label class="error" for="email-rf" id="email_error_rf">Email is required.</label>
-                        </div>
-                    </div>
-
-                    <div class="af-outer af-required">
-                        <div class="form-group af-inner">
-                            <input type="text" name="city" id="city-rf" size="30" value="" placeholder="City *" class="form-control placeholder" />
-                            <label class="error" for="city-rf" id="city_error_rf">City is required.</label>
-                        </div>
-                    </div>
-
-                    <div class="af-outer af-required">
-                        <div class="form-group af-inner">
-                            <textarea name="message" id="input-message-rf" cols="30" placeholder="Why do you want to attend Smart City Startups? *" class="form-control placeholder"></textarea>
-                            <label class="error" for="input-message-rf" id="message_error_rf">'Why message' is required.</label>
-                        </div>
-                    </div>
-                    <div class="af-outer af-required">
-                        <div class="form-group af-inner">
-                            <textarea name="phrase" id="input-phrase-rf" cols="30" placeholder="What are 2 words to describe your oganization? *" class="form-control placeholder"></textarea>
-                            <label class="error" for="input-phrase-rf" id="phrase_error_rf">'Organization phrase' is required.</label>
-                        </div>
-                    </div>                    
-
-                </form>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-theme-sm btn-theme btn-theme-primary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-theme-sm btn-theme " id="submit_btn_rf" style="display:none;" disabled>Apply</button>
-            </div>
-            <!-- /form -->
-        </div>
-    </div>
-</div>
 
     <!-- Header -->
     <header class="header">
@@ -143,6 +72,7 @@
                     <li><a href="#partners_sponsors">How</a></li>
                     <li><a href="#location">Where</a></li>
                     <li><a href="#join">Join Us</a></li>
+                    <li><a href="#faq-section">FAQ</a></li>
                     <li><a href="http://smartcitystartups.com/2014">2014 Review</a></li>
                 </ul>
             </nav>
@@ -354,250 +284,6 @@
         <!-- /Last tweet -->
 
 
-        <!-- About event --
-        <section class="page-section about-event">
-            <div class="container">
-
-                <h3 class="section-title text-center" data-animation="fadeInUp" data-animation-delay="100">
-                    What s all about event
-                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper tellus sit amet nibh fringilla.</small>
-                </h3>
-
-                <div class="row">
-
-                    <div class="col-md-6">
-
-                        <p class="text-lg">Praesent ac sem in neque venenatis tristique. Morbi et ligula velit. Nullam a augue vel mi porta vestibulum non ac elit. Vivamus convallis tortor et fermentum semper.</p>
-
-                        <p class="text-lg">In hac habitasse platea dictumst. Curabitur eget dui id metus pulvinar suscipit. Quisque vitae ligula laoreet, scelerisque leo quis, facilisis metus. Sed pellentesque, urna sed varius consectetur, eros augue fringilla magna, id elementum sem magna vel diam. Nulla sed hendrerit nunc.</p>
-
-                        <ul class="list-ul text-md">
-                            <li><i class="fa fa-stop"></i> Aliquam non urna posuere tellus dapibus dictum.</li>
-                            <li><i class="fa fa-stop"></i> Etiam ultrices orci vel nisl sagittis, vitae tempor libero volutpat.</li>
-                            <li><i class="fa fa-stop"></i> Aenean sed purus viverra, vehicula orci lobortis, cursus libero.</li>
-                            <li><i class="fa fa-stop"></i> Nunc eu mi eget mi luctus pulvinar.</li>
-                        </ul>
-
-                        <p class="btn-theme-group">
-                            <a class="btn btn-theme btn-theme-primary" data-toggle="modal" data-target="#myModal" href="#">Register Now</a>
-                            <a class="btn btn-theme" href="#">Speakers</a>
-                        </p>
-
-                        <hr class="page-divider half hidden-md"/>
-                    </div>
-
-                    <div class="col-md-6">
-
-                        <div class="row">
-                            <div class="col-sm-6">
-
-                                <div class="thumbnail do-hover no-border">
-                                    <img src="assets/img/preview/event1.jpg" class="img-responsive" alt="">
-                                    <div class="caption">
-                                        <div class="caption-wrapper div-table">
-                                            <div class="caption-inner div-cell">
-                                                <p class="caption-buttons">
-                                                    <a href="#" class="btn caption-links"><i class="fa fa-heart"></i></a>
-                                                    <a data-gal="prettyPhoto" href="assets/img/preview/event1-big.jpg" class="btn caption-links"><i class="fa fa-eye"></i></a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="thumbnail do-hover no-border">
-                                    <img src="assets/img/preview/event2.jpg" class="img-responsive" alt="">
-                                    <div class="caption">
-                                        <div class="caption-wrapper div-table">
-                                            <div class="caption-inner div-cell">
-                                                <p class="caption-buttons">
-                                                    <a href="#" class="btn caption-links"><i class="fa fa-heart"></i></a>
-                                                    <a data-gal="prettyPhoto" href="assets/img/preview/event2-big.jpg" class="btn caption-links"><i class="fa fa-eye"></i></a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="thumbnail do-hover no-border">
-                                    <img src="assets/img/preview/event3.jpg" class="img-responsive" alt="">
-                                    <div class="caption">
-                                        <div class="caption-wrapper div-table">
-                                            <div class="caption-inner div-cell">
-                                                <p class="caption-buttons">
-                                                    <a href="#" class="btn caption-links"><i class="fa fa-heart"></i></a>
-                                                    <a data-gal="prettyPhoto" href="assets/img/preview/event3-big.jpg" class="btn caption-links"><i class="fa fa-eye"></i></a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="thumbnail do-hover no-border">
-                                    <img src="assets/img/preview/event4.jpg" class="img-responsive" alt="">
-                                    <div class="caption">
-                                        <div class="caption-wrapper div-table">
-                                            <div class="caption-inner div-cell">
-                                                <p class="caption-buttons">
-                                                    <a href="#" class="btn caption-links"><i class="fa fa-heart"></i></a>
-                                                    <a data-gal="prettyPhoto" href="assets/img/preview/event4-big.jpg" class="btn caption-links"><i class="fa fa-eye"></i></a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- /About event --
-
-        <!-- Subscribe --
-        <section class="page-section parallax subscribe">
-            <div class="container div-table">
-
-                <div class="parallax-bg" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="-150"></div>
-                <div class="parallax-overlay"></div>
-                <div class="parallax-inner text-center">
-
-                    <h3 class="section-title" data-animation="fadeInUp" data-animation-delay="100">Dont Miss The Event <small></small></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper tellus sit amet nibh fringilla aliquet sit amet in leo. Integer neque urna, tristique eget enim interdum, aliquam tincidunt magna.</p>
-                    <form class="subscribe" id="subscribe" role="form">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="mc-email" placeholder="Enter your mail here">
-                            <label class="error" for="mc-email" id="email1_error"></label>
-                        </div>
-                        <button type="submit" class="btn btn-theme btn-theme-primary btn-subscribe">Subscribe</button>
-                    </form>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- /Subscribe --
-
-        <!-- Recent Posts --
-        <section class="page-section light">
-            <div class="container">
-                <h3 class="section-title text-center" data-animation="fadeInUp" data-animation-delay="100">Our Recent Posts <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper tellus sit amet nibh fringilla.</small></h3>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <article class="post-wrap thumbnail">
-                            <div class="post-media">
-                                <div class="thumbnail no-border do-hover">
-                                    <img class="img-responsive" src="assets/img/preview/post1.jpg" alt="">
-                                    <div class="caption">
-                                        <div class="caption-wrapper div-table">
-                                            <div class="caption-inner div-cell">
-                                                <p class="caption-buttons">
-                                                    <a href="assets/img/preview/post1-big.jpg" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a>
-                                                    <a href="#" class="btn caption-link"><i class="fa fa-link"></i></a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-meta clearfix">
-                                    <span class="pull-left"><span class="post-date"><i class="fa fa-calendar"></i>  20.02.2014</span></span>
-                                    <span class="pull-right"><a href="#"><i class="fa fa-comment"></i> 26</a></span>
-                                </div>
-                            </div>
-                            <div class="post-header">
-                                <h4 class="post-title"><a href="#">Standart Post Tıtle</a></h4>
-                                <span class="post-author">by <a href="#">Author Name</a></span>
-                            </div>
-                            <div class="post-body">
-                                <div class="post-excerpt">Lorem neque ipsum dolor sitamet, adipiscingelit. Maecenas consectetur  diam, luctus at laoreet in, auctor tellus. </div>
-                            </div>
-                            <div class="post-footer">
-                                <span class="post-readmore"><a href="#" class="readmore-link btn btn-theme btn-theme-default btn-theme-sm">Read More</a></span>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-4">
-                        <article class="post-wrap thumbnail">
-                            <div class="post-media">
-                                <div class="thumbnail no-border do-hover">
-                                    <img class="img-responsive" src="assets/img/preview/post2.jpg" alt="">
-                                    <div class="caption">
-                                        <div class="caption-wrapper div-table">
-                                            <div class="caption-inner div-cell">
-                                                <p class="caption-buttons">
-                                                    <a href="assets/img/preview/post2-big.jpg" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a>
-                                                    <a href="#" class="btn caption-link"><i class="fa fa-link"></i></a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-meta clearfix">
-                                    <span class="pull-left"><span class="post-date"><i class="fa fa-calendar"></i>  20.02.2014</span></span>
-                                    <span class="pull-right"><a href="#"><i class="fa fa-comment"></i> 26</a></span>
-                                </div>
-                            </div>
-                            <div class="post-header">
-                                <h4 class="post-title"><a href="#">Standart Post Tıtle</a></h4>
-                                <span class="post-author">by <a href="#">Author Name</a></span>
-                            </div>
-                            <div class="post-body">
-                                <div class="post-excerpt">Lorem neque ipsum dolor sitamet, adipiscingelit. Maecenas consectetur  diam, luctus at laoreet in, auctor tellus. </div>
-                            </div>
-                            <div class="post-footer">
-                                <span class="post-readmore"><a href="#" class="readmore-link btn btn-theme btn-theme-default btn-theme-sm">Read More</a></span>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-4">
-                        <article class="post-wrap thumbnail">
-                            <div class="post-media">
-                                <div class="thumbnail no-border do-hover">
-                                    <img class="img-responsive" src="assets/img/preview/post3.jpg" alt="">
-                                    <div class="caption">
-                                        <div class="caption-wrapper div-table">
-                                            <div class="caption-inner div-cell">
-                                                <p class="caption-buttons">
-                                                    <a href="assets/img/preview/post3-big.jpg" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a>
-                                                    <a href="#" class="btn caption-link"><i class="fa fa-link"></i></a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-meta clearfix">
-                                    <span class="pull-left"><span class="post-date"><i class="fa fa-calendar"></i>  20.02.2014</span></span>
-                                    <span class="pull-right"><a href="#"><i class="fa fa-comment"></i> 26</a></span>
-                                </div>
-                            </div>
-                            <div class="post-header">
-                                <h4 class="post-title"><a href="#">Standart Post Tıtle</a></h4>
-                                <span class="post-author">by <a href="#">Author Name</a></span>
-                            </div>
-                            <div class="post-body">
-                                <div class="post-excerpt">Lorem neque ipsum dolor sitamet, adipiscingelit. Maecenas consectetur  diam, luctus at laoreet in, auctor tellus. </div>
-                            </div>
-                            <div class="post-footer">
-                                <span class="post-readmore"><a href="#" class="readmore-link btn btn-theme btn-theme-default btn-theme-sm">Read More</a></span>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="text-center"><a class="btn btn-theme" href="#">Load More</a></div>
-            </div>
-        </section>
-        <!-- /Recent Posts -->
-        
         <!-- Partners -->
         <section class="page-section" id="partners_sponsors">
             <div class="container partners" style="padding-top:50px">
@@ -664,19 +350,7 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.0638205155765!2d-80.19908969999999!3d25.801468500000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6b2876bf245%3A0x2b311c60172b73da!2sMiami%2C+FL+33127!5e0!3m2!1sen!2sus!4v1416431856421" width="300" height="300" frameborder="0" style="border:0"></iframe>
                         </div>
                     </div>
-                   <!--
-                    <div class="row">
-                        <div class="col-sm-6 col-xs-12">
-                            <p>Want to explore Wynwood?</p>
-                            
-                            <p><a class="btn btn-theme btn-theme-white" href="https://itunes.apple.com/us/app/wynwood-tour-guide/id746340987?mt=8" target="_blank">get the wynwood tour app for iPhone</a></p>
-                        </div>
-                        <div class="col-sm-6 col-xs-12">
-                            <img ng-src="http://a4.mzstatic.com/us/r30/Purple6/v4/8b/f8/9a/8bf89a90-290a-ced8-62d9-1822e43d01ee/screen568x568.jpeg" class="img-responsive" alt="">
-                            
-                        </div>
-                    </div>
-                    -->
+               
                 </div>                
             </div>
         </section>
@@ -840,85 +514,6 @@
             </div>
         </section>
 
-
-        <!-- Directions --
-        <section class="page-section parallax directions" id="location">
-            <div class="container div-table">
-
-                <div class="parallax-bg" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="-150"></div>
-                <div class="parallax-overlay"></div>
-                <div class="parallax-inner text-center">
-
-                    <p class="directions-icon"><i class="fa fa-map-marker"></i></p>
-                    <p>Apple Store SOHO‎</p>
-                    <p>103 Prince St New York, NY 10012, United States</p>
-                    <p>+1 212-226-3126</p>
-                    <p class="directions-mailto"><a href="mailto:hello@eventme.com">hello@eventme.com</a></p>
-                    <p><a class="btn btn-theme btn-theme-white" href="#">get directıons</a></p>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- /Directions -->
-
-        <!-- Get ın touch --
-        <section class="page-section get-in-touch" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h3 class="section-title small-bottom">Get ın touch <small></small></h3>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper tellus sit amet nibh fringilla aliquet sit amet in leo. Integer neque urna, tristique eget enim interdum, aliquam tincidunt magna.</p>
-                    <hr class="page-divider small"/>
-
-                    <!-- form --
-                    <form name="af-form" method="post" action="#contact" class="af-form row" id="af-form">
-
-                        <div class="col-sm-6 pull-right">
-                            <div class="af-outer af-required">
-                                <div class="form-group af-inner">
-                                    <input type="text" name="name" id="name" size="30" value="" placeholder="Name *" class="form-control placeholder" />
-                                    <label class="error" for="name" id="name_error">Name is required.</label>
-                                </div>
-                            </div>
-
-                            <div class="af-outer af-required">
-                                <div class="form-group af-inner">
-                                    <input type="text" name="email" id="email" size="30" value="" placeholder="Email *" class="form-control placeholder" />
-                                    <label class="error" for="email" id="email_error">Email is required.</label>
-                                </div>
-                            </div>
-
-                            <div class="af-outer af-required">
-                                <div class="form-group af-inner">
-                                    <input type="text" name="subject" id="subject" size="30" value="" placeholder="Subject *" class="form-control placeholder" />
-                                    <label class="error" for="subject" id="subject_error">Email is required.</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 pull-left">
-                            <div class="af-outer af-required">
-                                <div class="form-group af-inner">
-                                    <textarea name="message" id="input-message" cols="30" placeholder="Message *" class="form-control placeholder"></textarea>
-                                    <label class="error" for="input-message" id="message_error">Message is required.</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 af-outer af-required">
-                            <div class="form-group af-inner">
-                                <input type="submit" name="submit" class="btn btn-block btn-theme btn-theme-invert form-button" id="submit_btn" value="Send Message!" />
-                            </div>
-                        </div>
-
-                    </form>
-                    <!-- /form --
-
-                </div>
-            </div>
-        </section>
-        <!-- /get ın touch -->
-
     </div>
     <!-- /Content area -->
 
@@ -927,11 +522,11 @@
 
         <div class="container">
             <div class="row">
-                <!--<div class="col-sm-12 text-center social-icons">
-                    <a class="social-icon" href="#"><i class="fa fa-facebook"></i></a>
-                    <a class="social-icon" href="#"><i class="fa fa-twitter"></i></a>
-                    <a class="social-icon" href="#"><i class="fa fa-linkedin"></i></a>
-                </div>-->
+                <div class="col-sm-12 text-center social-icons">
+                    <a class="social-icon" href="https://twitter.com/citystartups" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a class="social-icon" href="https://www.facebook.com/SmartCityStartups" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <!-- <a class="social-icon" href="#"><i class="fa fa-linkedin"></i></a> -->
+                </div>
                 <div class="col-sm-12 text-center">&copy; 2014 <a href="http://urban.us" target="_blank">Urban.Us</a> — Organizers of <a href="http://smartcitystartups.com/2014" target="_blank">Smart City Startups 2014</a></div>
             </div>
         </div>
