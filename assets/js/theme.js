@@ -396,7 +396,7 @@ var theme = function () {
         },
         // Partners Slider
         initPartnerASlider: function () {
-            $("#partnersa").owlCarousel({
+            $("#partners").owlCarousel({
                 items: 4,
                 itemsDesktop: false,
                 itemsDesktopSmall: [991, 4],
@@ -406,7 +406,7 @@ var theme = function () {
                 pagination: false
             });
         },
-        initPartnerBSlider: function () {
+        /*initPartnerBSlider: function () {
             $("#partnersb").owlCarousel({
                 items: 4,
                 itemsDesktop: false,
@@ -416,7 +416,7 @@ var theme = function () {
                 autoPlay: true,
                 pagination: false
             });
-        },        
+        }, */       
         // mediaPartners Slider
         initmediaPartnerSlider: function () {
             $("#mediapartners").owlCarousel({
