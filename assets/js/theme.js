@@ -397,7 +397,7 @@ var theme = function () {
         // Partners Slider
         initPartnerASlider: function () {
             $("#partners").owlCarousel({
-                items: 4,
+                items: 1,
                 itemsDesktop: false,
                 itemsDesktopSmall: [991, 4],
                 itemsTablet: [768, 3],

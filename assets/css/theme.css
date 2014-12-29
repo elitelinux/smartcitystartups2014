@@ -386,6 +386,17 @@ div.pp_overlay {
 .partners .owl-carousel div a img {}
 .partners .owl-carousel div + div {border-left: solid 1px #d2d2dc;}
 
+
+.partnersb .owl-carousel div {
+    display: block;
+    text-align: center;
+    margin-left: -1px;
+    margin-right: 1px;
+}
+.partnersb .owl-carousel div a {display: inline-block;}
+.partnersb .owl-carousel div a img {}
+.partnersb .owl-carousel div + div {border-left: solid 1px #d2d2dc;}
+
 /* TYPOGRAPHY
 /* ========================================================================== */
 
