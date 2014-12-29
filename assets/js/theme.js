@@ -396,7 +396,7 @@ var theme = function () {
         },
         // Partners Slider
         initPartnerSlider: function () {
-            $("#partners0").owlCarousel({
+            $("#partnersa").owlCarousel({
                 items: 1,
                 itemsDesktop: false,
                 itemsDesktopSmall: [991, 4],
@@ -407,7 +407,7 @@ var theme = function () {
             });
         },
         initPartnerSlider: function () {
-            $("#partners1").owlCarousel({
+            $("#partnersb").owlCarousel({
                 items: 1,
                 itemsDesktop: false,
                 itemsDesktopSmall: [991, 4],
