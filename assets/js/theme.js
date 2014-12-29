@@ -397,7 +397,7 @@ var theme = function () {
         // Partners Slider
         initPartnerSlider: function () {
             $("#partnersa").owlCarousel({
-                items: 1,
+                items: 4,
                 itemsDesktop: false,
                 itemsDesktopSmall: [991, 4],
                 itemsTablet: [768, 3],
@@ -406,17 +406,6 @@ var theme = function () {
                 pagination: false
             });
         },
-        initPartnerSlider: function () {
-            $("#partnersb").owlCarousel({
-                items: 1,
-                itemsDesktop: false,
-                itemsDesktopSmall: [991, 4],
-                itemsTablet: [768, 3],
-                itemsMobile: [479, 2],
-                autoPlay: true,
-                pagination: false
-            });
-        },        
         // mediaPartners Slider
         initmediaPartnerSlider: function () {
             $("#mediapartners").owlCarousel({
